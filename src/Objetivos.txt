@@ -1,0 +1,6 @@
+06/05/2024
+
+1) Conocer la libreria react router dom 
+2) Component Screen (Vistas)
+3) Component 
+4) Hooks Personalizables 

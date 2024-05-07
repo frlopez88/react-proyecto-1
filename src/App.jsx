@@ -1,22 +1,23 @@
-import React, { useState } from 'react'
-
+import { Contador } from './ComponentScreen/Contador'
+import {ErrorPage} from './ComponentScreen/ErrorPage'
+import { TablaUsuarios } from './ComponentScreen/TablaUsuarios'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export const App = () => {
 
-  const [contador, setContador] = useState(0)
-
-  function onClickHandler(val) {
-    setContador(contador + val)
-  }
+  
 
   return (
     <>
-      <h1>Hola Mundo</h1>
 
-      <p>{contador}</p>
 
-      <button onClick={() => onClickHandler(1)} >+</button>
-      <button onClick={() => onClickHandler(-1)}>-</button>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Contador/>}  /> 
+          <Route path='/usuarios' element={<TablaUsuarios/>}  />
+          <Route path='*' element={<ErrorPage/>}  />
+        </Routes>
+      </BrowserRouter>
 
     </>
   )
