@@ -3,4 +3,11 @@
 1) Conocer la libreria react router dom 
 2) Component Screen (Vistas)
 3) Component 
-4) Hooks Personalizables 
+4) Consumir web services GET
+
+08/05/2024
+
+1) Consumir web services POST
+2) Hook Personalizados
+3) Componentes Atomicos
+
